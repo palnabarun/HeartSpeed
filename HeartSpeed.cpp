@@ -42,8 +42,9 @@ void HeartSpeed::setCB(HEARTCBFUNC cb_)
 */
 void HeartSpeed::begin(void)
 {
-  MsTimer2::set(5,recv,this);
-  MsTimer2::start();
+  // MsTimer2::set(5,recv,this);
+  // MsTimer2::start();
+  recv(this);
 }
 /*!
 *  @brief Receive serial data and process
